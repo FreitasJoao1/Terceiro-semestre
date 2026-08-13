@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Calculadora {
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("Informe o N1: ");
+        double N1 = sc.nextDouble();
+
+        System.out.println("Informe o N2: ");
+        double N2 = sc.nextDouble();
+        
+
+        System.out.println("Informe o N3: ");
+        double N3 = sc.nextDouble();
+
+        double soma=N1+N2+N3;
+        double sub=N1-N2-N3;
+        double mult=N1*N2*N3;
+        double div=N1/N2/N3;
+        double media=(N1+N2+N3)/3;
+
+        sc.close();
+        System.out.println("Operações com os números. A média: "+media+" A soma: "+soma+" A subtração: "+sub+" A multiplicação: "+mult+" A divisão: "+div);
+    }
+
+}
